@@ -6,7 +6,7 @@
 #define PUSHBACKINSERTREPLACE_CAPITAL_H
 
 #include "string"
-#include "cctype"
+#include "cctype"                                     // to use islower() and toupper()
 
 using std::string;
 using std::islower;
@@ -14,9 +14,9 @@ using std::toupper;
 
 string capitalize(string& userName)
 {
-    if(islower(userName.at(0)))
+    if(islower(userName.at(0)))                       // if the word is not capitalized
     {
-        userName.at(0) = toupper(userName.at(0));
+        userName.at(0) = toupper(userName.at(0));     //capitalize it and assing as new value
     }
 
     return userName;
