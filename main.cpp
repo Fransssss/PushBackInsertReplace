@@ -66,7 +66,7 @@ int main()
             {
                 copiedStdName = copiedStdName.replace(0, 5,
                                                       "Hmm, unclear response...its okay, keep learning c++ cause you are doing so well");
-                cout << copiedStdName << endl;
+                cout << '\n' << copiedStdName << endl;
             }
 
 
